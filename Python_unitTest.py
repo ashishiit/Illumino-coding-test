@@ -36,8 +36,10 @@ class MyTest(unittest.TestCase):
                     self.input_url()                    
                     break
                 except:
-                    print(count)
+                    #print(count)
                     if count == 2: #if count is 2 then raise exception and fail the case
                         self.fail(e)
                     else:
                         pass #if count is less than 2 and valid url entered then pass the case
+if __name__ == '__main__':
+    unittest.main()
